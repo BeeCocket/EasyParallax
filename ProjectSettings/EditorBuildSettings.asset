@@ -6,6 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/BeeCocket/EasyParallax/Example/Scene.unity
+    path: Assets/WorkerHoneybee/EasyParallax/Example/Scene.unity
     guid: cf25ccc3ea827be46953914e4e2debc4
   m_configObjects: {}
