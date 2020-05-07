@@ -10,15 +10,15 @@ namespace WorkerHoneybee.EasyParallax
 
 
         [Range(-1.0f, 1.0f)]
-        [field: SerializeField]
-        private float XShift;
+        [SerializeField]
+        private float xShift;
 
         [Range(-1.0f, 1.0f)]
-        [field: SerializeField]
-        private float YShift;
+        [SerializeField]
+        private float yShift;
 
         [field: SerializeField]
-        private float MaxShift;
+        private float MaxShift { get; set; }
 
         private Gyroscope Gyroscope { get; set; }
         private bool IsGyroEnabled { get; set; }
@@ -67,7 +67,7 @@ namespace WorkerHoneybee.EasyParallax
         protected virtual void Update()
         {
 #if UNITY_EDITOR
-            OnGyroShift(new Vector2(XShift * MaxShift, YShift * MaxShift));
+            OnGyroShift(new Vector2(xShift * MaxShift, yShift * MaxShift));
 #else
             if (IsGyroEnabled)
             {

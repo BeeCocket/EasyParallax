@@ -5,7 +5,7 @@ namespace WorkerHoneybee.EasyParallax
     public class ParallaxLayer : MonoBehaviour
     {
         [field: SerializeField]
-        private float SpeedFactor;
+        private float SpeedFactor { get; set; }
 
         private RectTransform RectTransformComponent { get; set; }
         private Vector2 DefaultPosition { get; set; }
